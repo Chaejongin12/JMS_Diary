@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/save_diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장된 일기"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dasdas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일기 제목"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/save_diary" />
+
+        <TextView
+            android:id="@+id/diary_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dasdas" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/diary_title" />
+
+        <TextView
+            android:id="@+id/dasdasd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일기 내용"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image" />
+
+        <TextView
+            android:id="@+id/content"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dasdasd" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/write_diary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="일기 제목"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/write_diary" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="일기 내용을 작성하세요!"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일기 저장하고 이동하기"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
