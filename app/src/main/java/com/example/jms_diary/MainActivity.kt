@@ -1,9 +1,11 @@
+package com.example.jms_diary
+
+import InfoActivity
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import com.example.jms_diary.InfoActivity
 import com.example.jms_diary.R
 import com.example.jms_diary.databinding.ActivityMainBinding
 
